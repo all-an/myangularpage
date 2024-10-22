@@ -6,7 +6,9 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "build-gh-pages": "ng build --configuration production --base-href 'https://all-an.github.io/myangularpage/'",
+    "deploy": "npx angular-cli-ghpages --dir=dist/myangularpage"
   },
   "private": true,
   "dependencies": {
